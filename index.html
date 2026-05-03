@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteAssist | Your Election Guide</title>
+    <meta name="description" content="Navigate the election process with ease. Understand timelines, registration, and voting steps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">Vote<span>Assist</span></div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#assistant" class="btn-primary">Start Assistant</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Navigate Elections with <span class="gradient-text">Confidence.</span></h1>
+                    <p>Your personal assistant for understanding the election process, important deadlines, and step-by-step voting requirements.</p>
+                    <button id="start-btn" class="btn-primary large">Launch Assistant</button>
+                </div>
+            </section>
+
+            <section id="timeline" class="timeline-section">
+                <h2>Important <span class="gradient-text">Timelines</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Voter Registration Deadline</h3>
+                            <p>Typically 15-30 days before election day depending on your state.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Mail-in Ballot Request</h3>
+                            <p>Request at least 1-2 weeks prior to ensure timely delivery.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Early Voting Begins</h3>
+                            <p>Often starts several weeks before the official election day.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Election Day</h3>
+                            <p>The final day to cast your vote in person at your designated polling place.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quiz" class="assistant-section">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-icon">🎯</div>
+                        <h3>Election Knowledge Quiz</h3>
+                    </div>
+                    <div class="chat-messages" id="quiz-messages">
+                        <div class="message bot">
+                            <p>Test your election knowledge! Ready to start?</p>
+                        </div>
+                    </div>
+                    <div class="chat-options" id="quiz-options">
+                        <button class="chat-btn" data-action="start_quiz">Start Quiz</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="assistant" class="assistant-section">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-icon">🗳️</div>
+                        <h3>VoteAssist AI</h3>
+                    </div>
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message bot">
+                            <p>Hi! I'm your Election Assistant. Are you looking to understand the complete process, register, find a polling place, or learn about deadlines?</p>
+                        </div>
+                    </div>
+                    <div class="chat-options" id="chat-options">
+                        <button class="chat-btn" data-action="process">Complete Election Process</button>
+                        <button class="chat-btn" data-action="register">How to Register</button>
+                        <button class="chat-btn" data-action="polling">Find Polling Place</button>
+                        <button class="chat-btn" data-action="deadlines">Election Deadlines</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 VoteAssist. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
